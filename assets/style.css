@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Ambit';
+  src: url('assets/Ambit-Regular.otf') format('opentype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, 
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Ambit', Arial, sans-serif;
+  color: #222;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  padding: 60px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 60px;
+  text-align: center;
+}
+
+.footer p {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer address span {
+  padding: 10px 0;
+}
+
+.storebuzz-logo {
+  width: 100%;
+  max-width: 600px;
+}
+
+.shopify-logo {
+  width: 100%;
+  max-width: 200px;
+  opacity: .7;
+}
+
+@media (max-width: 680px) {
+  .storebuzz-logo {
+    max-width: 300px;
+  }
+
+  .shopify-logo {
+    max-width: 100px;
+  }
+}
